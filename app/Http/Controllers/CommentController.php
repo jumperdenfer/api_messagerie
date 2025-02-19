@@ -28,7 +28,7 @@ class CommentController extends Controller
     {
         $request->validate([
             'message_id'=> 'required|exists:messages,id',
-            'nb_comment' => 'nullable|integer|min:1|max:50',
+            'nb_comments' => 'nullable|integer|min:1|max:50',
             'page' => 'nullable|integer|min:1'
         ]);
         $nb_comment = $request->nb_comment ?? 30;

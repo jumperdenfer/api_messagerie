@@ -26,7 +26,7 @@ class MessageController extends Controller
     public function getMessages(Request $request)
     {
         $request->validate([
-            'nb_message' => 'nullable|integer|min:1|max:50',
+            'nb_messages' => 'nullable|integer|min:1|max:50',
             'page' => 'nullable|integer|min:1'
         ]);
 
